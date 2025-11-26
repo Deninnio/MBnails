@@ -1,0 +1,33 @@
+
+body {
+   
+    background-image: url('ryan-klaus-TliweUwl4Bw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;                /* Zorgt dat body de volledige hoogte van het scherm heeft */
+    margin: 0;      
+
+}
+
+.floating-btn {
+    position: fixed;          /* Blijft op dezelfde plek bij scrollen */
+    bottom: 20px;             /* Afstand vanaf onderkant */
+    right: 20px;              /* Afstand vanaf rechterkant */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;       /* Maakt de knop rond */
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparant */
+    backdrop-filter: blur(10px); /* Glas-effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Schaduw */
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
